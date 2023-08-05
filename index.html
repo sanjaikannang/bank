@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bank Holidays Fetch Example</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Checking Bank Holidays</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="dateInput">Enter a date (YYYY-MM-DD):</label>
+            <input
+              type="text"
+              class="form-control"
+              id="dateInput"
+              placeholder="YYYY-MM-DD"
+            />
+          </div>
+          <button id="fetchButton" class="btn btn-primary btn-block">
+            CKECK
+          </button>
+        </div>
+      </div>
+      <div class="mt-4" id="bankHolidaysData"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
